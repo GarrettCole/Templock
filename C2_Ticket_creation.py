@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-TOKEN=open("B2_DNS_check.py").read().strip()
+TOKEN= "vGkbXkGLqQSo7YLflp9DutuG8st4xdPPF7wnTcwB0FE"
 H={"Authorization": f"Bearer {TOKEN}","Content-Type":"application/json"}
 print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
 for n,ip in [("PC2","192.168.20.101"),("PC3","192.168.30.100"),("SVR1","192.168.20.210"),("SVR2","192.168.30.210")]:
